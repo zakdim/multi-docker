@@ -14,3 +14,10 @@ after_success:
   - docker build -t zakdim/multi-nginx ./nginx
   - docker build -t zakdim/multi-server ./server
   - docker build -t zakdim/multi-worker ./worker
+  # Log in to the docker CLI
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  # Take those images and push them to docker hub
+  - docker push zakdim/multi-client
+  - docker push zakdim/multi-nginx
+  - docker push zakdim/multi-server
+  - docker push zakdim/multi-worker
