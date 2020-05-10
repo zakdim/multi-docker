@@ -11,3 +11,8 @@ docker-compose up
 # OR build image and start container
 docker-compose up --build
 ```
+
+== 11-158 - RDS Database Creation 
+username: postgres
+password: postgrespassword
+databasename: fibvalues
