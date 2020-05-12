@@ -89,3 +89,16 @@ $> docker run -it <IMAGE_ID>
 Map port to be able to access application at http://localhost:3000
 ```
 $> docker run -it -p 3000:3000 <IMAGE_ID>
+```
+
+### Section 12: Kubernetes
+
+#### Lecture 176 - Minikube Setup on MacOS
+```
+minikube start
+```
+#### Lecture 181 - Mapping Existing Knowledge
+```
+minikube status
+kubectl cluster-info
+```
