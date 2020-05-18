@@ -102,3 +102,11 @@ minikube start
 minikube status
 kubectl cluster-info
 ```
+#### Lecture 201 - Rebuilding the Client Image
+```
+# Rebuild docker image
+docker build -t zakdim/multi-client .
+
+# Push newly created image to docker hub
+docker push zakdim/multi-client
+```
